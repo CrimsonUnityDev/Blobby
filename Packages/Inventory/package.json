@@ -1,0 +1,12 @@
+{
+  "name": "com.scourge.inventory",
+  "version": "1.0.0",
+  "displayName": "Rog Inventory",
+  "description": "Inventory code & prefabs for unity",
+  "author": {
+    "name": "Owen McConnell",
+    "email": "owentexting@gmail.com",
+    "url": "git@github.com:url.git"
+  },
+  "hideInEditor": false
+}

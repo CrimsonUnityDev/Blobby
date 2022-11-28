@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939c248e6b1bb447900d327f0c0032f, type: 3}
+  m_Name: GameSaveManager
+  m_EditorClassIdentifier: 
+  defaultState:
+    currentLocation: {fileID: -6187953602192249403, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+    characterStates:
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: fc1c93302e5f69a44bc9e7b81f6f04e0, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: aa0ef02800f9e6743ada58ef3fa67692, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: d9e9ebbdd890e44499343f4ec39830cc, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: 57a292cdbbacceb4492f114998bc0b53, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: ee4f5530bf63bda4eadf15cb07638318, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: 275563d2cd60283428306e424fb1c5d7, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: db80d8d2bce6ba44fafe4d11364cf4b0, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: 617c50e7f55bebd41abe6dcf6aba80b6, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: e6cd4183233292749a1321b3eb68faae, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: 476eb30a9fa221f4da9b1ef9fd31519e, type: 2}
+    - hasBeenMet: 0
+      isAlive: 1
+      character: {fileID: 11400000, guid: 8c297628be3111b4c8077bb6f168d590, type: 2}
+    itemStates:
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: abdc834efca934341bee68195a36e0e0, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: a7a08e1c1fdce8b4bb5cf257e729005e, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: df08291fc52fe2347b7caaa20ef2de9c, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: 27eba5814d5e96148835d734eb58394f, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: 94c8404348ef154478e30f6d1bf3919d, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: abdc834efca934341bee68195a36e0e0, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: 7cd36712972b71048a5027047b8dd56a, type: 2}
+    - ownsItem: 0
+      clicked: 0
+      item: {fileID: 11400000, guid: 872d8e887e571cc469393dfb6f797969, type: 2}
+    locations:
+    - location: {fileID: -8841585277033881426, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -8301421394997002554, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: 6894234597347789880, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: 5762528381424219921, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -8785099054254996655, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -6187953602192249403, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -8477508492245515731, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: 3416993511747847695, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -4645137199507071256, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: 8268010331894796985, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -3928565731980732751, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: -4714570857063190759, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
+    - location: {fileID: 4736486820871333132, guid: f600cc8d0bade174a9dcddb05f575caa, type: 2}
+      visited: 0
