@@ -43,6 +43,7 @@ public class LevelDesignerManager : ScriptableObject
       [System.Serializable]
     public class SaveData
     {
+        public int gridSize;
         public List<GridObjectSaveData> GridObjectSaveDatas = new List<GridObjectSaveData>();
     }
 
@@ -73,11 +74,25 @@ _ = LoadGridData(fileName);
         _ = LoadGridData(fileName);
     }
 
+    public void SetCells(System.Single value)
+    {
+        SetCells((int) value);
+    }
+
+    public void SetCells(int size)
+    {
+        GridManagerAccessor.GridManager.GridSettings.Width =  size;
+        GridManagerAccessor.GridManager.GridSettings.Height =  size;
+        GridManagerAccessor.GridManager.GridSettings.AmountOfCellsX =  size;
+        GridManagerAccessor.GridManager.GridSettings.AmountOfCellsY =  size;
+    }
+
     private async Task LoadGridData(string fileName)
     {
         string saveDataAsJson = File.ReadAllText(Path.Combine(Application.dataPath, "Saves", fileName + ".json"));
 
         SaveData saveData = JsonUtility.FromJson<SaveData>(saveDataAsJson);
+        SetCells(saveData.gridSize);
 
         List<GridObjectPositionData> gridObjectPositionDatas = new List<GridObjectPositionData>();
 
@@ -114,6 +129,7 @@ _ = LoadGridData(fileName);
         GridData gridData = GridManagerAccessor.GridManager.GridData;
 
             SaveData saveData = new SaveData();
+            saveData.gridSize = GridManagerAccessor.GridManager.GridSettings.AmountOfCellsX;
 
             for (int i = 0; i < gridData.GridObjectPositionDatas.Count; i++)
             {

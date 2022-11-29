@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad495544d8064444da0f986023a0a1c4, type: 3}
   m_Name: RogLevelDesignerManager
   m_EditorClassIdentifier: 
-  _gridSettings: {fileID: 11400000, guid: c809e681c2a80ca4b89cd01692ed82df, type: 2}
+  _gridSettings: {fileID: 11400000, guid: dc9e2ae7bd2f386418a6ebb07f8a3ad0, type: 2}
   _gridObjectPrefab: {fileID: 1612602402071460151, guid: 4f830f471a1ffe0419123a2d7bbead18, type: 3}
   spawnList: {fileID: 11400000, guid: 7891b00989abe4a48a069976e81f6126, type: 2}
   layers: []
