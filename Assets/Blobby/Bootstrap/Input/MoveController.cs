@@ -41,11 +41,21 @@ public class MoveController : MonoBehaviour
             transform.RotateAround(transform.position, Vector3.up, moveVec.x * rotateSpeed);
         }
 
-        moveVec.x=0f;
-        moveVec.Normalize();
+        // moveVec.x=0f;
+        // moveVec.Normalize();
+
+        Vector3 camForward = Camera.main.transform.forward;
+        camForward.y=0f;
+        camForward.Normalize();
+
+        Vector3 camRight = Camera.main.transform.right;
+        camRight.y=0f;
+        camRight.Normalize();
+
         
 
-        controller.SimpleMove( transform.forward * moveVec.z *speed);
+        controller.SimpleMove( (camForward) * moveVec.z *speed);
+        controller.SimpleMove( (camRight) * moveVec.x *speed);
 
         UnityEngine.InputSystem.Controls.AxisControl camDelta = Mouse.current.scroll.y;
     
