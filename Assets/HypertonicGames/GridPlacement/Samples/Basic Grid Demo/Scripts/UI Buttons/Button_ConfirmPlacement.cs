@@ -8,6 +8,10 @@ namespace Hypertonic.GridPlacement.Example.BasicDemo
     {
         public static event System.Action OnConfirmPlacementPressed;
 
+        public static void Trigger()
+        {
+            OnConfirmPlacementPressed?.Invoke();
+        }
         private void Start()
         {
             GetComponent<Button>().onClick.AddListener(() => OnConfirmPlacementPressed?.Invoke());

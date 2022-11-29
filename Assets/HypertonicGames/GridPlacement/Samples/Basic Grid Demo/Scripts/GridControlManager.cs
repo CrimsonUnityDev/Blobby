@@ -38,9 +38,15 @@ namespace Hypertonic.GridPlacement.Example.BasicDemo
 
             if (placed)
             {
+                Clear();
+            }
+        }
+
+        public void Clear()
+        {
+
                 OnObjectPlacedOnGrid?.Invoke();
                 _selectedGridObject = null;
-            }
         }
 
         private void HandleRotateLeftPressed()

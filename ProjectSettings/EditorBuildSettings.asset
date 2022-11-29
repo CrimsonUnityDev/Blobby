@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Blobby/Bootstrap/Scenes/Audio.unity
-    guid: 5ef8ad9454ba96e44bf78baf16bd1392
-  - enabled: 1
     path: Assets/Blobby/Bootstrap/Scenes/Bootstrap.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Blobby/Bootstrap/Scenes/Audio.unity
+    guid: 5ef8ad9454ba96e44bf78baf16bd1392
   - enabled: 1
     path: Assets/Blobby/Bootstrap/Scenes/HUD.unity
     guid: 72b6e1c8a1d74084ca1683ca0f83e86e
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Blobby/Game/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Blobby/Game/Scenes/CustomGame.unity
+    guid: 0d2bb419edb0d2541aaad28dd02326d8
   m_configObjects: {}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ed7485ecf57f64097afb15cd4741a2, type: 3}
+  m_Name: BlobbySpawnPrefabList
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 1612602402071460151, guid: 13131229c0dab2d40b8e1984727033aa, type: 3}
+  - {fileID: 1612602402071460151, guid: 855457291e3910d49b6eef94f6ffeed1, type: 3}
+  - {fileID: 1612602402071460151, guid: 36035b42667fff647b87612388606406, type: 3}
+  - {fileID: 1612602402071460151, guid: 130469ca1e3437f4b843276bc4a48e2a, type: 3}
+  - {fileID: 1612602402071460151, guid: 7c880c60580c2984ab29069a47f6196c, type: 3}
+  - {fileID: 1612602402071460151, guid: d39773bc054c30a4d994050f68c4598a, type: 3}
+  - {fileID: 1612602402071460151, guid: 7525b484586ef9d458d25b139c9dd139, type: 3}
+  - {fileID: 1612602402071460151, guid: 2447b9c6ce5fee949b6460e3960bc226, type: 3}
+  - {fileID: 3518961209607773384, guid: 67883966024862943ad26c0335d26255, type: 3}
+  - {fileID: 5545710317761260839, guid: dd73fd02e85016e4fa3569c625a44a74, type: 3}
+  - {fileID: 1612602402071460151, guid: 46fa0743fcb6b4844895b0b53a3963dc, type: 3}
+  - {fileID: 1612602402071460151, guid: 4f830f471a1ffe0419123a2d7bbead18, type: 3}

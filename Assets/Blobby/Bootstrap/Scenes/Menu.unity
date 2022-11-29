@@ -3586,14 +3586,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1945074585}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1567791602}
-        m_TargetAssemblyTypeName: MenuUI, Assembly-CSharp
-        m_MethodName: LoadGameClicked
+      - m_Target: {fileID: 11400000, guid: 6ecd2362a3bfd5740b8d7ea25fff3456, type: 2}
+        m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+        m_MethodName: TriggerTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

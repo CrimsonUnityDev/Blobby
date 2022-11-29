@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9489e943c6c675945951705c2146c62d, type: 3}
+  m_Name: BlobbySceneManagerData
+  m_EditorClassIdentifier: 
+  loadEvents: {fileID: 11400000, guid: f7c372966a7249d4890a3320a08d016e, type: 2}
+  gameEvents: {fileID: 11400000, guid: 26d3803c226ea70409ad8cbcd1aa363b, type: 2}
+  gameStateLoadTransition: {fileID: 11400000, guid: 43490f249439120429c84186f9a10ce1, type: 2}
+  loadStateLoadTransition: {fileID: 11400000, guid: 2c1a91b4c07b901478db47d847ea6214, type: 2}
+  homePressedTransition: {fileID: 11400000, guid: adc9909def56053459f418335e695d51, type: 2}
+  sceneTransitionScene:
+    sceneAsset: {fileID: 102900000, guid: 968cb08a62e20a645ac7736572f5ce9d, type: 3}
+    required: 0
+    buildIndex: 5
+  transitions:
+  - {fileID: 11400000, guid: 6ecd2362a3bfd5740b8d7ea25fff3456, type: 2}
+  - {fileID: 11400000, guid: 43490f249439120429c84186f9a10ce1, type: 2}
+  - {fileID: 11400000, guid: adc9909def56053459f418335e695d51, type: 2}
+  - {fileID: 11400000, guid: 2c1a91b4c07b901478db47d847ea6214, type: 2}

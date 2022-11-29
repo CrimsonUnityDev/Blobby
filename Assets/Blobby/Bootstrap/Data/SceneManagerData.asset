@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadEvents: {fileID: 11400000, guid: f7c372966a7249d4890a3320a08d016e, type: 2}
   gameEvents: {fileID: 11400000, guid: 26d3803c226ea70409ad8cbcd1aa363b, type: 2}
-  menuScene: Menu
-  audioScene: Audio
-  bootStrapScene: Bootstrap
-  gameScene: Game
-  hudScene: HUD
-  inputScene: Input
-  sceneTransitionScene: SceneManager
+  gameStateLoadTransition: {fileID: 0}
+  loadStateLoadTransition: {fileID: 0}
+  homePressedTransition: {fileID: 0}
+  transitions: []

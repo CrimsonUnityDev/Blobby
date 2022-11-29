@@ -13,18 +13,18 @@ namespace Hypertonic.GridPlacement
 
         [HideInInspector] 
         [Tooltip("The width of the grid in Unity World Space")]
-        public double Width = 10;
+        public double Width = 40;
 
         [HideInInspector]
         [Tooltip("The height of the grid in Unity World Space")]
-        public double Height = 10;
+        public double Height = 40;
 
         [HideInInspector]
         public Vector2Int GridSizeRatio = Vector2Int.one;
 
         [HideInInspector]
         [Tooltip("The amount of cells in the x dimension")]
-        public int AmountOfCellsX = 10;
+        public int AmountOfCellsX = 40;
 
         [HideInInspector]
         [Tooltip("The amount of cells in the y dimension")]

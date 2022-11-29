@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0f377e60367fe4ba955076dc3b08b5, type: 3}
+  m_Name: BlobbyHomeTransition
+  m_EditorClassIdentifier: 
+  scenesToLoad:
+  - sceneAsset: {fileID: 102900000, guid: dfddff8a716d19c458a1ee2b918e68b2, type: 3}
+    required: 1
+    buildIndex: 4
+  scenesToUnload:
+  - sceneAsset: {fileID: 102900000, guid: 72b6e1c8a1d74084ca1683ca0f83e86e, type: 3}
+    required: 1
+    buildIndex: 2
+  - sceneAsset: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+    required: 1
+    buildIndex: 6
+  - sceneAsset: {fileID: 102900000, guid: 0d2bb419edb0d2541aaad28dd02326d8, type: 3}
+    required: 1
+    buildIndex: 7

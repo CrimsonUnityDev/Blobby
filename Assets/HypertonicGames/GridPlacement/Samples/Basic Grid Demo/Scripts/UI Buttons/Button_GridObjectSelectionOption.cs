@@ -8,6 +8,11 @@ namespace Hypertonic.GridPlacement.Example.BasicDemo
     {
         public static event System.Action<GameObject> OnOptionSelected;
 
+        public static void Trigger(GameObject objectToPlace)
+        {
+             OnOptionSelected?.Invoke(objectToPlace);
+        }
+
         [SerializeField] private GameObject _gridObjectToSpawnPrefab;
 
         private void Start()

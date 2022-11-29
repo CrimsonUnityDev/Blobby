@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Crimson Apple/Audio/AudioManager")]
+[CreateAssetMenu(menuName = "Rog/Audio/AudioManager")]
 public class AudioData : ScriptableObject
 {
 	public delegate void AudioSliderEvent(float value);
