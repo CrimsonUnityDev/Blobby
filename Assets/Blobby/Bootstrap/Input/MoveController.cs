@@ -13,6 +13,7 @@ public class MoveController : MonoBehaviour
     [SerializeField] private float rotateSpeed = 5f;
     [SerializeField] private float maxFov = 110f;
     [SerializeField] private float minFov = 60f;
+    [SerializeField] private Animator anim;
 
     private InputAction move;
 
@@ -32,17 +33,16 @@ public class MoveController : MonoBehaviour
     private void Update()
     {
         Vector2 moveDir = move.ReadValue<Vector2>();
-
-        Vector3 moveVec = new Vector3(moveDir.x,0f, moveDir.y).normalized;
-
-        if (moveVec.magnitude>0)
+        if (Mathf.Approximately(moveDir.magnitude, 0f))
         {
-            // transform.forward=moveVec;
-            transform.RotateAround(transform.position, Vector3.up, moveVec.x * rotateSpeed);
+            anim.Play("Stand");
+        }
+        else
+        {
+            anim.Play("Jump");
         }
 
-        // moveVec.x=0f;
-        // moveVec.Normalize();
+        Vector3 moveVec = new Vector3(moveDir.x,0f, moveDir.y).normalized;
 
         Vector3 camForward = Camera.main.transform.forward;
         camForward.y=0f;
@@ -52,10 +52,14 @@ public class MoveController : MonoBehaviour
         camRight.y=0f;
         camRight.Normalize();
 
-        
+        Vector3 prevPos = transform.position;
+        Vector3 nextPos = transform.position + ((camForward) * moveVec.z + (camRight) * moveVec.x);
+        Vector3 dir = (nextPos-prevPos).normalized;
 
-        controller.SimpleMove( (camForward) * moveVec.z *speed);
-        controller.SimpleMove( (camRight) * moveVec.x *speed);
+        dir.y=0f;
+        transform.forward = Vector3.Slerp(transform.forward, dir, 0.25f);
+
+        controller.SimpleMove( ((camForward) * moveVec.z + (camRight) * moveVec.x) *speed);
 
         UnityEngine.InputSystem.Controls.AxisControl camDelta = Mouse.current.scroll.y;
     

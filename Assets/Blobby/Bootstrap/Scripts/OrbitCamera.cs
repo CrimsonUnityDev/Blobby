@@ -137,9 +137,10 @@ public class OrbitCamera : MonoBehaviour
 		Vector2 input = move.ReadValue<Vector2>()/40f;
         input = new Vector2(input.y, -input.x);
 		const float e = 0.001f;
-        Debug.LogError(fire.ReadValue<float>());
 
-        if (fire.ReadValue<float>() == 1f)
+        bool pressed = UnityEngine.InputSystem.Keyboard.current.pKey.isPressed;
+
+        if (fire.ReadValue<float>() == 1f && !pressed)
         {
 
             if (input.x < -e || input.x > e || input.y < -e || input.y > e) {

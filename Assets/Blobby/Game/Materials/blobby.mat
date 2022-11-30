@@ -2,14 +2,39 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: blobby
   m_Shader: {fileID: 4800000, guid: caafb24bd37854940a94d07ff8f3578c, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _MAINNORMX_ON
+  - _MAINNORMY_ON
+  - _MAINNORMZ_ON
+  - _MAINTEXX_ON
+  - _MAINTEXY_ON
+  - _MAINTEXZ_ON
+  - _NORM1X_ON
+  - _NORM1Y_ON
+  - _NORM1Z_ON
+  - _NORM2X_ON
+  - _NORM2Y_ON
+  - _NORM2Z_ON
+  - _NORM3X_ON
+  - _NORM3Y_ON
+  - _NORM3Z_ON
+  - _TEX1X_ON
+  - _TEX1Y_ON
+  - _TEX1Z_ON
+  - _TEX2X_ON
+  - _TEX2Y_ON
+  - _TEX2Z_ON
+  - _TEX3X_ON
+  - _TEX3Y_ON
+  - _TEX3Z_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -99,6 +124,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdditionalTex1X: 1
     - _AdditionalTex1Y: 1
@@ -173,3 +199,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
